@@ -1,16 +1,16 @@
 <?php 
 
+// enregistrer le menu
+register_nav_menus( array("menu" => "Menu principal"));
 
 // ajout style et script
 function ajout_scripts() {
     wp_enqueue_style( "style", get_stylesheet_uri());
     wp_enqueue_script('jquery');
+    wp_enqueue_style( 'roboto', "https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@100;300;500;700;900&display=swap" );
 }
 add_action("wp_enqueue_scripts", "ajout_scripts");
 
-
-// enregistrer le menu
-register_nav_menus( array("menu" => "Menu principal"));
 
 
 //thumbnails

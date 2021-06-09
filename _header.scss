@@ -1,0 +1,92 @@
+header{
+    #navtel{
+
+    }
+    #couverture{
+height: 300px;
+background-repeat: no-repeat;
+background-position: center;
+position: relative;
+img{
+    width: 15%;
+    left: 15%;
+    top: 15%;
+}
+    }
+
+    nav{
+width: 80%;
+margin: auto;
+position: relative;
+top:-32px;
+height: 60px;
+background-color: $sec;
+
+            ul{
+                margin-left: 0;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                height: 100%;
+    align-items: center;
+li{
+    a{
+        text-decoration: none;
+        font-family: 'Chewy', cursive;
+       color:$titre;
+    }
+}
+            }
+        }
+
+    }
+
+
+.l-triangle-top {
+    border-color: $sec transparent transparent;
+    border-style:solid;
+    border-width:50px;
+    height:0px;
+    width:0px;
+    position: absolute;
+    float: left;
+    top: 1px;
+    left: -50px;
+ }
+  
+ .l-triangle-bottom {
+    border-color: transparent transparent $sec;
+    border-style:solid;
+    border-width:50px;
+    height:0px;
+    width:0px;
+    position: absolute;
+    float: left;
+    top: -40px;
+    left: -50px;
+ }
+
+ .r-triangle-top {
+    border-color: $sec transparent transparent;
+    border-style:solid;
+    border-width:50px;
+    height:0px;
+    width:0px;
+    position: absolute;
+    float: right;
+    right: -50px;
+    top: 1px;
+ }
+  
+ .r-triangle-bottom {
+    border-color: transparent transparent $sec;
+    border-style:solid;
+    border-width:50px;
+    height:0px;
+    width:0px;
+    position: absolute;
+    float: right;
+    top: -40px;
+    right: -50px;
+ }
+ 
