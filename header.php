@@ -20,9 +20,8 @@
         <div id="navtel"></div>
     <div id="couverture" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"> <img src="http://localhost:8888/lab+instal/wp-content/uploads/2021/06/logo.png" alt=""></div>
     
-    <nav>
-    <div class="l-triangle-top"></div>
-   <div class="l-triangle-bottom"></div>
+    <nav class="ribbon">
+    
         <?php 
         wp_nav_menu(array(
           'menu' => 'Menu principal',
@@ -30,8 +29,10 @@
           'menu_class' => 'header-nav'
         ));
         ?>
-         <div class="r-triangle-top"></div>
-         <div class="r-triangle-bottom"></div>
+       <i></i>
+  <i></i>
+  <i></i>
+  <i></i>
       </nav>
        
     </header>
