@@ -1,15 +1,14 @@
 // Every page styles
 @import 'variables';
 @import 'header';
+@import 'index';
 
 
-*{
-    margin: 0;
-    padding: 0;
-
+html{
+    margin: 0px;
     body{
-        background-color: #CFD897;
-
+        margin: 0;
+        padding: 0;
         #blog{
             background-color: white;
             display: flex;
@@ -74,3 +73,4 @@
         }
     }
 }
+
