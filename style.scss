@@ -1,12 +1,14 @@
 // Every page styles
+@import 'variables';
+@import 'header';
+@import 'index';
 
-*{
-    margin: 0;
-    padding: 0;
 
+html{
+    margin: 0px;
     body{
-        background-color: #CFD897;
-
+        margin: 0;
+        padding: 0;
         #blog{
             background-color: white;
             display: flex;
@@ -35,8 +37,6 @@
                     align-items: center;
                     justify-content: space-between;
                     background-color: white;
-                    border-radius: 15px;
-                    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.363);
 
                     .content{
                         display: flex;
@@ -67,22 +67,10 @@
                 }
             }
 
-            #recent{
-                width: 80%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                #recentArticles{
-                    width: 50%;
-                }
-
-                #button-archives{
-                    text-transform: uppercase;
-                    background-color: #F6F479;
-                    padding: 20px;
-                }
+            #button-archives{
+                
             }
         }
     }
 }
+

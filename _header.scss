@@ -1,0 +1,128 @@
+header{
+  #navtel{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color: $prim;
+    #contnavtel{
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: flex-end;
+      
+      
+      #icontel{
+        width: 13%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        img{
+          width: 10%;
+          height: auto;
+        }
+        
+        a{
+          text-decoration: none;
+          font-family: "Chewy";
+          font-size: 1.3em;
+          color: #E2624E;
+        }
+      }
+    }
+  }
+  #couverture{
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: -2;
+    img{
+      width: 15%;
+      left: 15%;
+      top: 15%;
+    }
+  }
+  
+  nav{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    height: 60px;
+    top:-50;
+    background-color: $sec;
+    
+    
+    
+    
+    ul{
+      margin-left: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      height: 100%;
+      align-items: center;
+      li{
+        a{
+          text-decoration: none;
+          font-family: 'Chewy', cursive;
+          font-size: 1.3em;
+          color:$titre;
+        }
+      }
+    }
+  }
+  .ribbon i {
+    position: absolute;
+  }
+  
+  .ribbon i:first-child{
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    z-index: -1;
+    border: 20px solid transparent;
+    border-right-color: $sec2;
+  }
+  
+  .ribbon i:nth-child(2) {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    z-index: -1;
+    border: 20px solid transparent;
+    border-right-color: $sec2;
+  }
+  
+  .ribbon i:nth-child(2) {
+    left: auto;
+    right: -20px;
+    border-right-color: transparent;
+    border-left-color:$sec2;
+  }
+  
+  .ribbon i:nth-child(3), .ribbon i:last-child {
+    width: 20px;
+    bottom: -20px;
+    left: -60px;
+    z-index: -2;
+    border: 30px solid $sec;
+    border-left-color: transparent;
+    
+    
+  }
+  
+  .ribbon i:last-child {
+    bottom: -20px;
+    left: auto;
+    right: -60px;
+    border: 30px solid $sec;
+    border-right-color: transparent;
+    
+  }
+  
+  
+}
+
+
+
+
