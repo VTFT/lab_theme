@@ -3,7 +3,7 @@
 <?php wp_head(); ?>
 
 </head>
-<body>
+<body onload="showSlides(slideIndex)">
 
 <header role="banner">
 <div id="navtel">

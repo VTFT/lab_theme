@@ -1,8 +1,8 @@
 header{
+  background-color: $prim;
   #navtel{
     padding-top: 1vh;
     padding-bottom: 1vh;
-    background-color: $prim;
     #contnavtel{
       width: 90%;
       margin: auto;
@@ -35,7 +35,7 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    z-index: -2;
+    z-index: 1;
     img{
       width: 15%;
       left: 15%;
@@ -50,10 +50,7 @@ header{
     height: 60px;
     top:-50;
     background-color: $sec;
-    
-    
-    
-    
+    z-index: 2;
     ul{
       margin-left: 0;
       list-style: none;

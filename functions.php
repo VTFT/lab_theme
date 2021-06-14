@@ -15,8 +15,11 @@ register_nav_menus( array("menu" => "Menu principal"));
 function ajout_scripts() {
     wp_enqueue_style( "style", get_stylesheet_uri());
     wp_enqueue_script('jquery');
-    wp_enqueue_style( 'roboto', "https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@100;300;500;700;900&display=swap" );
+    wp_enqueue_script( 'slider', get_template_directory_uri(). '/js/slider.js' );
+    wp_enqueue_style( 'font', "https://fonts.googleapis.com/css2?family=Chewy&family=Montserrat:wght@100;300;500;700;900&display=swap" );
     wp_enqueue_style( 'fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" );
+  
+
 }
 add_action("wp_enqueue_scripts", "ajout_scripts");
 
