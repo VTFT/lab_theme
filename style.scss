@@ -9,6 +9,10 @@ html{
     body{
         margin: 0;
         padding: 0;
+
+        @media only screen and (max-width: 375px){
+            width: 100%;
+        } 
         #blog{
             background-color: white;
             display: flex;

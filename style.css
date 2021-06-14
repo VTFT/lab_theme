@@ -14,6 +14,9 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between; }
+        @media only screen and (max-width: 375px) {
+          header #navtel #contnavtel #icontel {
+            width: auto; } }
         header #navtel #contnavtel #icontel img {
           width: 10%;
           height: auto; }
@@ -28,10 +31,17 @@ header {
     background-position: center;
     position: relative;
     z-index: 1; }
+    @media only screen and (max-width: 375px) {
+      header #couverture {
+        height: 150px; } }
     header #couverture img {
+      position: absolute;
       width: 15%;
       left: 15%;
       top: 15%; }
+      @media only screen and (max-width: 375px) {
+        header #couverture img {
+          width: 25%; } }
   header nav {
     width: 80%;
     margin: auto;
@@ -101,9 +111,16 @@ header {
     margin: auto;
     background-color: #DDE3B5;
     position: relative; }
+    @media only screen and (max-width: 375px) {
+      #index #caroussel .slideshow-container {
+        width: 70%; } }
   #index #caroussel .mySlides {
     justify-content: center;
     display: none; }
+    @media only screen and (max-width: 375px) {
+      #index #caroussel .mySlides img {
+        width: 100%;
+        height: auto; } }
   #index #caroussel .prev, #index #caroussel .next {
     position: absolute;
     top: 50%;
@@ -145,11 +162,17 @@ header {
 
 #index #cartesactivités {
   margin-top: 20vh; }
+  @media only screen and (max-width: 375px) {
+    #index #cartesactivités {
+      margin-top: 10vh; } }
   #index #cartesactivités #containeractivité {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 375px) {
+      #index #cartesactivités #containeractivité {
+        flex-direction: column; } }
     #index #cartesactivités #containeractivité .cartesindex {
       background-color: #F8CFC9;
       width: 25%;
@@ -158,6 +181,10 @@ header {
       align-items: center;
       justify-content: space-around;
       min-height: 350px; }
+      @media only screen and (max-width: 375px) {
+        #index #cartesactivités #containeractivité .cartesindex {
+          width: 100%;
+          margin-bottom: 5vh; } }
       #index #cartesactivités #containeractivité .cartesindex h2 {
         font-family: "Chewy";
         font-size: 1.2em;
@@ -171,12 +198,21 @@ header {
 
 #index #présentation {
   margin-top: 20vh; }
+  @media only screen and (max-width: 375px) {
+    #index #présentation {
+      margin-top: 10vh; } }
   #index #présentation #containerprésentation {
     width: 80%;
     margin: auto;
     display: flex; }
+    @media only screen and (max-width: 375px) {
+      #index #présentation #containerprésentation {
+        flex-direction: column; } }
     #index #présentation #containerprésentation #texteprésentation {
       width: 50%; }
+      @media only screen and (max-width: 375px) {
+        #index #présentation #containerprésentation #texteprésentation {
+          width: 100%; } }
       #index #présentation #containerprésentation #texteprésentation #square {
         width: 100%;
         height: 500px;
@@ -186,6 +222,9 @@ header {
         transform: rotate(-2.77deg);
         display: flex;
         justify-content: center; }
+        @media only screen and (max-width: 375px) {
+          #index #présentation #containerprésentation #texteprésentation #square {
+            height: auto; } }
         #index #présentation #containerprésentation #texteprésentation #square #titretexte {
           width: 80%;
           margin: auto; }
@@ -197,23 +236,40 @@ header {
             font-size: 1.2em;
             line-height: 47px;
             color: #000000; }
+            @media only screen and (max-width: 375px) {
+              #index #présentation #containerprésentation #texteprésentation #square #titretexte h2 {
+                text-align: center;
+                font-size: 1.5em; } }
           #index #présentation #containerprésentation #texteprésentation #square #titretexte p {
             font-family: 'Montserrat', sans-serif;
             font-size: 1em;
             font-weight: 400;
             transform: rotate(2.77deg);
-            font-size: 1.2em;
             line-height: 29px;
             color: #000000; }
     #index #présentation #containerprésentation #imageprésentation {
       width: 50%; }
+      @media only screen and (max-width: 375px) {
+        #index #présentation #containerprésentation #imageprésentation {
+          display: none; } }
+
+@media only screen and (max-width: 375px) {
+  #index #sectionvideo {
+    margin-top: 10vh; } }
 
 #index #sectionvideo #containervideo {
   width: 80%;
   margin: auto;
   display: flex; }
+  @media only screen and (max-width: 375px) {
+    #index #sectionvideo #containervideo {
+      flex-direction: column;
+      align-items: center; } }
   #index #sectionvideo #containervideo #perso {
     width: 50%; }
+    @media only screen and (max-width: 375px) {
+      #index #sectionvideo #containervideo #perso {
+        display: none; } }
   #index #sectionvideo #containervideo #button {
     width: 50%;
     display: flex;
@@ -230,9 +286,18 @@ header {
       line-height: 3vw;
       text-align: center;
       color: #000000; }
+      @media only screen and (max-width: 375px) {
+        #index #sectionvideo #containervideo #button a {
+          width: 100%;
+          height: 6vh;
+          line-height: 6vh; } }
     #index #sectionvideo #containervideo #button img {
       left: 6vw;
       position: absolute; }
+      @media only screen and (max-width: 375px) {
+        #index #sectionvideo #containervideo #button img {
+          width: 25%;
+          left: 33vw; } }
 
 * {
   box-sizing: border-box; }
@@ -242,6 +307,9 @@ html {
   html body {
     margin: 0;
     padding: 0; }
+    @media only screen and (max-width: 375px) {
+      html body {
+        width: 100%; } }
     html body #blog {
       background-color: white;
       display: flex;

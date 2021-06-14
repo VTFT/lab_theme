@@ -1,21 +1,30 @@
 #index{
     #caroussel{
         background-color:$prim;
-       padding-bottom: 10vh;
-         /*slider*/
-         .slideshow-container {
+        padding-bottom: 10vh;
+        /*slider*/
+        .slideshow-container {
             width: 80%;
             margin: auto;
             background-color:$prim;
             position: relative;
+            @media only screen and (max-width: 375px){
+                width: 70%;
+            } 
         }
-
+        
         .mySlides{
             justify-content: center;
             display: none;
+            img{
+                @media only screen and (max-width: 375px){
+                    width: 100%;
+                    height: auto;
+                } 
+            }
         }
-    
-    
+        
+        
         /* Next & previous buttons */
         .prev, .next {
             position: absolute;
@@ -26,27 +35,27 @@
             font-size: 18px;
             transition: 0.6s ease;
         }
-    
+        
         /* Position the "next button" to the right */
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
-    
+        
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
             background-color: rgba(0,0,0,0.8);
         }
-    
-    
+        
+        
         /* The dots/bullets/indicators */
-    
+        
         #alldots{
             display: flex;
             justify-content: center;
-    
+            
             .dot {
-    
+                
                 cursor: pointer;
                 height: 15px;
                 width: 15px;
@@ -56,13 +65,13 @@
                 display: inline-block;
                 transition: background-color 0.6s ease;
             }
-    
+            
             .dot:hover {
                 background-color: #717171;
             }
         }
-    
-    
+        
+        
         /* Fading animation */
         .fade {
             
@@ -71,26 +80,33 @@
             animation-name: fade;
             animation-duration: 1.5s;
         }
-    
+        
         @-webkit-keyframes fade {
             from {opacity: .4} 
             to {opacity: 1}
         }
-    
+        
         @keyframes fade {
             from {opacity: .4} 
             to {opacity: 1}
         }
-         
+        
     }
     
     #cartesactivités{
         margin-top: 20vh;
+        
+        @media only screen and (max-width: 375px){
+            margin-top: 10vh
+        } 
         #containeractivité{
             width: 80%;
             margin: auto;
             display: flex;
             justify-content: space-between;
+            @media only screen and (max-width: 375px){
+                flex-direction: column;
+            } 
             .cartesindex{
                 background-color: $sec;
                 width: 25%;
@@ -99,6 +115,11 @@
                 align-items: center; 
                 justify-content: space-around;
                 min-height: 350px;
+                
+                @media only screen and (max-width: 375px){
+                    width: 100%;
+                    margin-bottom: 5vh;
+                } 
                 h2{
                     font-family: "Chewy";
                     font-size: 1.2em;
@@ -118,13 +139,25 @@
     
     #présentation{              
         margin-top: 20vh;
+        @media only screen and (max-width: 375px){
+            margin-top: 10vh;
+        } 
         #containerprésentation{
             width: 80%;
             margin: auto;
-            display: flex;          
+            display: flex; 
+            @media only screen and (max-width: 375px){
+                flex-direction: column;
+            }          
             #texteprésentation{
                 width: 50%;
+                @media only screen and (max-width: 375px){
+                    width: 100%;
+                } 
                 #square{
+                    @media only screen and (max-width: 375px){
+                        height: auto;
+                    } 
                     width: 100%;
                     height: 500px;
                     left: 148.44px;
@@ -137,6 +170,10 @@
                         width: 80%;
                         margin: auto;
                         h2{
+                            @media only screen and (max-width: 375px){
+                                text-align: center;
+                                font-size: 1.5em;
+                            } 
                             transform: rotate(
                             2.77deg);                           
                             font-family: "Chewy";
@@ -153,11 +190,8 @@
                             font-weight: 400;
                             transform: rotate(
                             2.77deg);
-                            font-size: 1.2em;
                             line-height: 29px;
                             color: #000000;
-                            
-                            
                         }
                         
                     }
@@ -166,26 +200,47 @@
             
             #imageprésentation{
                 width: 50%;
+                @media only screen and (max-width: 375px){
+                    display: none;
+                } 
             }
         }
     }
     
     #sectionvideo{
+        
+        @media only screen and (max-width: 375px){
+            margin-top: 10vh;
+        } 
         #containervideo{
             width: 80%;
             margin: auto;
             display: flex;
+            @media only screen and (max-width: 375px){
+                flex-direction: column;
+                align-items: center;
+            } 
             
             #perso{
                 width: 50%;
+                @media only screen and (max-width: 375px){
+                    display: none;
+                } 
             }
             #button{
+                @media only screen and (max-width: 375px){} 
                 width: 50%;
                 display: flex;
                 justify-content: end;
                 align-items: flex-end;
                 position: relative;
                 a{
+                    
+                    @media only screen and (max-width: 375px){
+                        width: 100%;
+                        height: 6vh;
+                        line-height: 6vh;
+                    } 
                     width: 10vw;
                     height: 3vw;
                     background: #DDE3B5;
@@ -199,6 +254,10 @@
                 img{
                     left: 6vw;
                     position: absolute;
+                    @media only screen and (max-width: 375px){
+                        width: 25%;
+                        left: 33vw;
+                    } 
                 }
             }
         }
