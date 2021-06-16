@@ -25,7 +25,9 @@
     <div id="couverture" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>');"> <img src="http://localhost:8888/lab+instal/wp-content/uploads/2021/06/logo.png" alt=""></div>
     
     <nav class="ribbon">
-    
+      <div id="all">
+    <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+    <label for="menu-checkbox" class="fas fa-bars"></label>
     <?php 
     wp_nav_menu(array(
       'menu' => 'Menu principal',
@@ -33,8 +35,7 @@
       'menu_class' => 'header-nav'
     ));
     ?>
-    <i></i>
-    <i></i>
+    </div>
     <i></i>
     <i></i>
     </nav>

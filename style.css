@@ -50,52 +50,82 @@ header {
     top: -50;
     background-color: #F8CFC9;
     z-index: 2; }
-    header nav ul {
-      margin-left: 0;
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      height: 100%;
-      align-items: center; }
-      header nav ul li a {
-        text-decoration: none;
-        font-family: 'Chewy', cursive;
-        font-size: 1.3em;
-        color: #E2624E; }
-  header .ribbon i {
-    position: absolute; }
-  header .ribbon i:first-child {
-    position: absolute;
-    left: -20px;
-    bottom: -20px;
-    z-index: -1;
-    border: 20px solid transparent;
-    border-right-color: #E2624E; }
-  header .ribbon i:nth-child(2) {
-    position: absolute;
-    left: -20px;
-    bottom: -20px;
-    z-index: -1;
-    border: 20px solid transparent;
-    border-right-color: #E2624E; }
-  header .ribbon i:nth-child(2) {
-    left: auto;
-    right: -20px;
-    border-right-color: transparent;
-    border-left-color: #E2624E; }
-  header .ribbon i:nth-child(3), header .ribbon i:last-child {
-    width: 20px;
-    bottom: -20px;
-    left: -60px;
-    z-index: -2;
-    border: 30px solid #F8CFC9;
-    border-left-color: transparent; }
-  header .ribbon i:last-child {
-    bottom: -20px;
-    left: auto;
-    right: -60px;
-    border: 30px solid #F8CFC9;
-    border-right-color: transparent; }
+    @media only screen and (max-width: 375px) {
+      header nav {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center; } }
+    header nav #all {
+      position: absolute;
+      width: 100%; }
+      @media only screen and (max-width: 375px) {
+        header nav #all {
+          top: 30%; } }
+  header input {
+    display: none; }
+  header ul {
+    margin-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center; }
+    @media only screen and (max-width: 375px) {
+      header ul {
+        height: auto;
+        background-color: #F8CFC9; } }
+    header ul li a {
+      display: block;
+      text-decoration: none;
+      font-family: 'Chewy', cursive;
+      font-size: 1.3em;
+      color: #E2624E; }
+
+.ribbon i {
+  position: absolute; }
+
+body > header > nav > i:nth-child(2) {
+  width: 20px;
+  bottom: -20px;
+  left: -60px;
+  z-index: -2;
+  border: 30px solid #F8CFC9;
+  border-left-color: transparent; }
+
+body > header > nav > i:nth-child(3) {
+  bottom: -20px;
+  left: auto;
+  right: -60px;
+  border: 30px solid #F8CFC9;
+  border-right-color: transparent; }
+
+.menu-checkbox:checked ~ .header-nav {
+  display: none; }
+  @media only screen and (max-width: 375px) {
+    .menu-checkbox:checked ~ .header-nav {
+      display: block; } }
+
+.header-nav {
+  display: flex; }
+  @media only screen and (max-width: 375px) {
+    .header-nav {
+      display: none; } }
+
+.fa-bars {
+  display: none !important; }
+  @media only screen and (max-width: 375px) {
+    .fa-bars {
+      display: block !important;
+      color: #E2624E;
+      font-size: x-large;
+      text-align: center; } }
+  .fa-bars .menu-checkbox {
+    display: none; }
+    @media only screen and (max-width: 375px) {
+      .fa-bars .menu-checkbox {
+        display: block; } }
 
 #index #caroussel {
   background-color: #DDE3B5;
@@ -106,6 +136,9 @@ header {
   /* On hover, add a black background color with a little bit see-through */
   /* The dots/bullets/indicators */
   /* Fading animation */ }
+  @media only screen and (max-width: 375px) {
+    #index #caroussel {
+      position: relative; } }
   #index #caroussel .slideshow-container {
     width: 80%;
     margin: auto;
@@ -129,9 +162,18 @@ header {
     color: #807979ba;
     font-size: 18px;
     transition: 0.6s ease; }
+    @media only screen and (max-width: 375px) {
+      #index #caroussel .prev, #index #caroussel .next {
+        width: 15%; } }
   #index #caroussel .next {
     right: 0;
     border-radius: 3px 0 0 3px; }
+    @media only screen and (max-width: 375px) {
+      #index #caroussel .next {
+        right: -19%; } }
+  @media only screen and (max-width: 375px) {
+    #index #caroussel .prev {
+      left: -19%; } }
   #index #caroussel .prev:hover, #index #caroussel .next:hover {
     background-color: rgba(0, 0, 0, 0.8); }
   #index #caroussel #alldots {

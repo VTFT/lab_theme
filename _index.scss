@@ -2,6 +2,10 @@
     #caroussel{
         background-color:$prim;
         padding-bottom: 10vh;
+        
+        @media only screen and (max-width: 375px){
+            position: relative;
+        } 
         /*slider*/
         .slideshow-container {
             width: 80%;
@@ -34,12 +38,26 @@
             color: #807979ba;
             font-size: 18px;
             transition: 0.6s ease;
+            
+            @media only screen and (max-width: 375px){
+                width: 15%;
+            } 
         }
         
         /* Position the "next button" to the right */
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
+
+            @media only screen and (max-width: 375px){
+                right: -19%;
+            } 
+        }
+        
+        .prev{
+            @media only screen and (max-width: 375px){
+                left: -19%;
+            } 
         }
         
         /* On hover, add a black background color with a little bit see-through */
@@ -55,7 +73,6 @@
             justify-content: center;
             
             .dot {
-                
                 cursor: pointer;
                 height: 15px;
                 width: 15px;
