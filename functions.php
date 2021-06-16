@@ -5,6 +5,10 @@
 function ajout_scripts() {
     wp_enqueue_style( "style", get_stylesheet_uri());
     wp_enqueue_script('jquery');
+    wp_enqueue_script( "script", get_template_directory_uri() . "/script.js");
+    wp_enqueue_style( 'font', "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap" );
+    wp_enqueue_style( 'fontchewy', "https://fonts.googleapis.com/css2?family=Chewy&display=swap" );
+    wp_enqueue_style( 'fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" );
 }
 add_action("wp_enqueue_scripts", "ajout_scripts");
 
@@ -36,7 +40,7 @@ function new_excerpt_length($length) {
 add_filter('excerpt_length', 'new_excerpt_length');
 function new_excerpt_more($more) {
     global $post;
-    return '… <a href="'. get_permalink($post->ID) . '">' . 'Read More &raquo;' . '</a>';
+    return '… <a href="'. get_permalink($post->ID) . '">' . 'Lire Plus &raquo;' . '</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 //fin
