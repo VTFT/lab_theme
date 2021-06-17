@@ -25,6 +25,15 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </article>
+    <div class="site__navigation">
+        <div class="site__navigation__next">
+            <?php next_post_link( '&laquo; %link' ); ?>
+        </div>
+
+        <div class="site__navigation__prev">
+            <?php previous_post_link( '%link &raquo;' ); ?>
+        </div>
+    </div>
     <span class="toTop"><a href=""><i class="fas fa-arrow-circle-up"></i></a></span>
 </main>
 

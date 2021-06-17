@@ -15,7 +15,7 @@
         <article>
         
             <div class="content">
-                <h3><a href='<?php the_permalink() ?>' rel='bookmark'><?php the_title(); ?></a></h3>            
+                <h3><a href='<?php the_permalink() ?>' rel='bookmark'><?php the_title(); ?></a></h3>          
                 <?php the_post_thumbnail(); ?>
                 <div class="categorie"><?php $category = get_the_category(); 
                             echo $category[0]->cat_name;?> </div>
