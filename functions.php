@@ -6,6 +6,7 @@ function ajout_scripts() {
     wp_enqueue_style( "style", get_stylesheet_uri());
     wp_enqueue_script('jquery');
     wp_enqueue_script( "script", get_template_directory_uri() . "/script.js");
+    wp_enqueue_script( "slider", get_template_directory_uri() . "/js/slider.js");
     wp_enqueue_style( 'font', "https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;900&display=swap" );
     wp_enqueue_style( 'fontchewy', "https://fonts.googleapis.com/css2?family=Chewy&display=swap" );
     wp_enqueue_style( 'fontawesome', "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" );
@@ -29,7 +30,12 @@ function wpm_post_excerpt($length) {
 }
 add_filter('excerpt_length', 'wpm_post_excerpt');
 
-
+//supprimer barre admin
+function wpc_show_admin_bar() {
+    return false;
+}
+add_filter('show_admin_bar' , 'wpc_show_admin_bar');
+//fin
 
 // Bouton read more
 
